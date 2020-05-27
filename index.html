@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style/style.css">
+        <title>Steam</title>
+    </head>
+    <body>
+        <header class="container-fluid">
+            <div class="container top">
+                <div class="row no-gutters justify-content-between">
+                        <div class="col-6 col-md-3 col-lg-2">
+                            <img src="images/logo.png" alt="steam" >
+                        </div>
+                        <div class="row col-6 col-md-9 col-lg-10 no-gutters align-items-center">
+                        <div class="col-6 col-md-12 col-lg-7">
+                                <a class="button_nav rounded"></a>
+                                <nav class="nav">
+                                    <a class="nav-link active" href="#">Home</a>
+                                    <a class="nav-link" href="#">Get Started</a>
+                                    <a class="nav-link" href="#">How it works</a>
+                                    <a class="nav-link" href="#">Pricing</a>
+                                    <a class="nav-link" href="#">Support</a>
+                                </nav>
+                        </div>
+                        <div class="login_desktop col-8 col-lg-5 d-flex justify-content-end">
+                            <ul class="d-inline-flex p-0 m-0">
+                                <li><a class="rounded d-block ml-1" href="#">Login / Signup</a></li>
+                                <li><a class="rounded d-block border-0" href="#">Get Listed Today</a></li>
+                            </ul>
+                        </div> 
+                        </div>
+                        <div class="login_mobile col-12">
+                            <ul class="d-inline-flex p-0 m-0">
+                                <li><a class="rounded d-block ml-1" href="#">Login / Signup</a></li>
+                                <li><a class="rounded d-block border-0" href="#">Get Listed Today</a></li>
+                            </ul>
+                        </div> 
+
+                </div>
+                <div class="row no-gutters justify-content-center">
+                    <div class="col">
+                        <h1 class="text-center">Find the <span>next event</span> you'll want <span>to attend</span>.</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container-fluid" id="map"></div>
+        <div class="container-fluid events">
+            <div class="container">
+                <div class="row no-gutters">
+                        <div class="col-12 geo_mobile">
+                                <form id="geo" action="#" method="POST" class="d-flex align-items-top">
+                                    <span>
+                                        <input placeholder="Your location" class="rounded">
+                                        <button type="submit" form="geo"></button>
+                                    </span>
+                                </form>
+                            </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <ul class="d-inline-flex p-0 m-0">
+                            <li><a class="hot active d-block">Hot Events</a></li>
+                            <li><a class="trending not_active d-block">Trending Events</a></li>
+                        </ul>
+                    </div>
+                    <div class="row col-12 col-md-8 col-lg-9 no-gutters justify-content-between">
+                        <div class="col-12 col-md-6 col-lg-7">
+                            <form action="#" method="POST">
+                                <input type="search" placeholder="Find your event" class="rounded">
+                            </form>
+                        </div>
+                        <div class="col-md-6 col-lg-5 geo_desktop">
+                            <form id="geo" action="#" method="POST" class="d-flex align-items-top">
+                                <span>
+                                    <input placeholder="Your location" class="rounded">
+                                    <button type="submit" form="geo"></button>
+                                </span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid articles">
+            <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <article>
+                                <div>
+                                    <div>
+                                        <img src="images/music_festival.png" alt="music_festival">
+                                        <div>
+                                            <a href="#"></a>
+                                            <time>Aug 17, 2013  02:00pm - 08:00pm IST</time>
+                                            <a href="#"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2>Act Big! Ultimate Music 
+                                        Festival</h2>
+                                    <p>Pattichion Municipal Amphitheater</p>
+                                    <p>Nikolaou G. Dimitriou Street , Larnaca, 6031, Cyprus</p>
+                                    <p>An evening of bowling by geeks for geeks. Nothing more, nothing less (adorn bowling shirts — funny shoes provided) Follow @TeamLebowski or #GeekBowling on Twitter for up to the minute news... Date: 22 August 2013 (Thursday) Time: 6:30pm for a 7:15pm start Venue: Elephant & Castle Superbowl - First Floor, Elephant & Castle Shopping Centre - SW1 6TE Tube: Elephant & Castle (Northern Line) http://www.metacafe.com/watch/978697/the_big_lebowski_jesus_quintana/ Cost: £11.95 payable via PayPal ...which includes shoe hire, x2 games of bowling plus loads of geeky fun guaranteed! Dees / @cyberdees & Peter / @peter_oneill *** This is a non sponsored event. You are all the sponsors by simply coming along. Feel free to bring along cool schwag to share with the rest of the community. ***
+                                    </p>
+                                </div>
+                                <div>
+                                    <div>
+                                        <p>13<span>%</span></p>
+                                        <p>Male</p>
+                                    </div>
+                                    <div>
+                                        <p>87<span>%</span></p>
+                                        <p>Female</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4  d-flex justify-content-center">
+                                <article>
+                                    <div>
+                                        <div>
+                                            <img src="images/art_club.png" alt="art_club">
+                                            <div>
+                                                <a class="photoE" href="#"></a>
+                                                <time>Aug 17, 2013  02:00pm - 08:00pm IST</time>
+                                                <a href="#"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h2>Summer Art Club - Week 1/3</h2>
+                                        <p>Fun Factory Wildeshausen</p>
+                                        <p>Am Umspannwerk 7, Wildeshausen, 27793, Germany</p>
+                                        <p>Join us for creative holiday activities - this week with Ashley & Letty! Let your 8-13 year olds to join to help burn some of that pent-up creative energy on our fun artist led workshops. You can book all three days, or just one at a time...
+                                            and this summer you can also book all three weeks (30 July - 1 August, 13 - 15 August and 27 - 29 August) for just £100! £40 per three-day week or £15 a day.  Please wear old clothes and remember your packed lunch! All days run from 11am until 3pm. To book, either call the gallery on 023 9277 8080, email info@aspex.org.uk or book here at Eventbrite. PS - If you want to avoid parking in the Gunwharf Quays car park, remember we have drop off spaces right outside the gallery, just ask for details!
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <p>25<span>%</span></p>
+                                            <p>Male</p>
+                                        </div>
+                                        <div>
+                                            <p>75<span>%</span></p>
+                                            <p>Female</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-end">
+                                    <article>
+                                        <div>
+                                            <div>
+                                                <img src="images/bocca_foodbar.png" alt="bocca_foodbar">
+                                                <div>
+                                                    <a href="#"></a>
+                                                    <time>Aug 17, 2013  02:00pm - 08:00pm IST</time>
+                                                    <a href="#"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h2>Bocca Foodbar @ Vama 
+                                                Veche</h2>
+                                            <p>Pattichion Municipal Amphitheater</p>
+                                            <p>Nikolaou G. Dimitriou Street , Larnaca, 6031, Cyprus</p>
+                                            <p>ERLEBT 3 TAGE LANG STRANDFEELING & PARTYSPAß PUR! BEACH PARTY OPENING WIR ERÖFFNEN DIE PARTYSAISON! Seid Ihr bereit für die heißeste Beachparty des Jahres ... 
+                                                ? ... dann freut Euch auf die sündigste Partywoche, die die Fun Factory je erlebt hat! Ganz nach dem Motto SOMMER, SONNE, SEX & STRAND, gibt es 3 Tage lang Strandfeeling pur, heiße Körper, die leckersten COCKTAILKREATIONEN, leckere GRILLSPECIALS in unserem Sommergarten und viele weitere Specials & Überraschungen! In dieser Woche zählt nur eins ... Party, Drinks, Sünde und Leidenschaft pur! Und wer meint das ist alles, der hat sich geirrt! An allen Tagen mit ... • RIESEN Outdoor Schaum Area • Sexy Baywatch Girls • GRATIS Spritzpistolen • Wasserbomben Schlacht im Outdoor Bereich • Eis for Free • Sexy Bodydrinking • Topless Girls in Glaspools • Sexy Beachboys • Trichtersaufen • Sangria aus Eimern BEACH PARTY OPENING SPECIAL!!! Wenn Du bis 24 Uhr die Fun Factory betrittst, zahlst Du NUR 99 CENT EINTRITT und für alle offenen Getränke* bis 1 Uhr UNGLAUBLICH GÜNSTIGE 99 CENT! COCKTAIL SPECIAL Die ganze Nacht lang ALLE COCKTAILS NUR 3 EURO! DRINKS 4 SUMMER An allen Tagen bekommt Ihr die Trenddrinks des Sommers für unglaublich günstige 2 EURO! VODKA ENERGY • BACARDI RAZZ SPRITE • MALIBU MARACUJA • LIKOR 43 MILCH ............................................................................ TICKET: Bis 24 Uhr NUR 99 CENT, danach 6 Euro! EINLASS: Ab 16 Jahren DOORS OPEN: 22 Uhr
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <p>62<span>%</span></p>
+                                                <p>Male</p>
+                                            </div>
+                                            <div>
+                                                <p>38<span>%</span></p>
+                                                <p>Female</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                        <article>
+                                            <div>
+                                                <div>
+                                                    <img src="images/faringdon.png" alt="faringdon">
+                                                    <div>
+                                                        <a class="photoE" href="#"></a>
+                                                        <time>Aug 17, 2013  02:00pm - 08:00pm IST</time>
+                                                        <a href="#"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h2>Faringdon Community Sports 
+                                                    College - Summer - Week 2</h2>
+                                                <p>University of Netherlands Antilles</p>
+                                                <p>Sta Maria Willeamstad, Curaçao, AN5999, Netherlands</p>
+                                                <p>Practical Self-Service BI with PowerPivot for Excel SQL Server MVP and Business Intelligence Architect Bill Pearson leads this full-day, hands-on introduction to using PowerPivot for...
+                                                    Excel to deliver self-service business intelligence.  The focus of the course is to help those new to PowerPivot to become familiar with the assembly of data from diverse sources into models that deliver business intelligence upon demand.  Participants will gain exposure to accessing and relating data, and to employing the Data Analysis Expressions (DAX) language, to construct and share PowerPivot applications that support analysis and reporting throughout the enterprise. Bill Pearson, MVP (SQL Server BI), CPA, CITP, CMA, CIA, MCDBA, MCSE, is a consultant, author, mentor and business intelligence architect who has been working with business intelligence for over 18 years, and with the integrated Microsoft Business Intelligence solution since its inception.  Bill has been awarded the Microsoft Most Valuable Player multiple times for his technical experience implementing Microsoft BI, as well as his contributions to the community as an author and speaker.  Bill’s recent series’ include the Stairway to MDX and Stairway to PowerPivot and DAX columns at SQLServerCentral.com, and he presents regularly at SQL Saturdays and other diverse events all over the United States and elsewhere. Course Objectives Upon completion of this course, attendees will be able to: Assemble and relate data from diverse sources into a PowerPivot model to support self-service business intelligence Employ DAX functions to create basic calculations within the PowerPivot data model Construct PowerPivot applications that support enterprise analysis and reporting Understand deployment options for PowerPivot via SharePoint Prerequisites Attendees with the following will benefit the most from this course: Basic familiarity with the Microsoft Windows operating system Exposure to Excel PivotTables and PivotCharts Exposure to standard Excel functions Exposure to basic relational database concepts Course Hardware and Software Requirements Course material will be provided on thumb drives. A laptop is not necessary but will help you take advantage of the course better.  If you wish to bring a laptop, requirements are as below.   Windows 7, Windows XP (SP3), or Windows Vista (SP1) 1GB RAM minimum (with 2GB RAM recommended) Microsoft Excel 2010 (32-bit or 64-bit) installed PowerPivot for Excel (32-bit or 64-bit, as appropriate to attendee machine) installed Microsoft SQL Server 2012 installed, or available for connection Connectivity available to AdventureWorksDW20012 database Connectivity available to Adventure Works Analysis Services database   OTHER COURSE INFORMATION: Food:  Lunch will be provided at the event location.  Please contact the organizer is you require a vegetarian option.   Cancellation policy: no cancellations/refunds/exchanges allowed except if event is cancelled for any reason. Full payment of $99.00 is due at the time of registration.
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <p>55<span>%</span></p>
+                                                    <p>Male</p>
+                                                </div>
+                                                <div>
+                                                    <p>45<span>%</span></p>
+                                                    <p>Female</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                                            <article>
+                                                <div>
+                                                    <div>
+                                                        <img src="images/training.png" alt="training">
+                                                        <div>
+                                                            <a href="#"></a>
+                                                            <time>Aug 17, 2013  02:00pm - 08:00pm IST</time>
+                                                            <a href="#"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h2>Training EN - OpenERP 7.0 
+                                                        Functional Training</h2>
+                                                    <p>Boulevard Barcelona</p>
+                                                    <p>La Rambla 27, Barcelona, 08002, Spain</p>
+                                                    <p>THE BOILER ROOM is coming to BCN The Boiler Room, un nuevo concepto de fiesta que aterriza en Barcelona, una noche fresca y muy energética con una programación de Dj's de ...
+                                                        lujo que crearán un ambiente festivo y de mucho desenfreno, acompañado de actuaciones en directo y de Performance Shows. MAIN ROOM: HOUSE MUSIC / LIVE ACTS / PERFORMANCE LINEUP: DJ MJNC / JAY SERANO ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● LISTA FACEBOOK: Entrada gratis hasta la 2:30 PUERTA: Chicas gratis hasta las 2:00 Entrada 10€ + 1 copa Entrada 15€ + 2 copas Para apuntarse escribe tu nombre y apellidos + número de acompañantes (máximo 2) en el muro del evento. Os recomendamos venir lo más temprano posible si están en lista para evitar colas. La lista se cierra antes de media noche! ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● Las Ramblas, 27 08002 – Barcelona L3 – Drassanes (a 200 metros) L3 – Liceu (a 250 metros) LNKS: http://www.facebook.com/boulevardbarcelona http://www.facebook.com/boulevardbarcelona/events
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <p>31<span>%</span></p>
+                                                        <p>Male</p>
+                                                    </div>
+                                                    <div>
+                                                        <p>69<span>%</span></p>
+                                                        <p>Female</p>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-end">
+                                                <article>
+                                                    <div>
+                                                        <div>
+                                                            <img src="images/band.png" alt="band">
+                                                            <div>
+                                                                <a class="photoE" href="#"></a>
+                                                                <time>Aug 17, 2013  02:00pm - 08:00pm IST</time>
+                                                                <a href="#"></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <h2>Band Workshop with Artists 
+                                                            in Residence Super Tenants</h2>
+                                                        <p>Culture Club Revelin</p>
+                                                        <p>Sv. Dominika 3, Dubrovnik, 20 000, Croatia</p>
+                                                        <p>Culture Club Revelin predstavio je novi ljetni program ''DREAMGIRLS IN REVELIN'' U bogatom cjelovečernjem programu moći ćete uživati u vrućim plesnim točkama zgodnih...
+                                                            plasačica i plesača. Najveću atrakciju zasigurno će izazvati performance u čašama za šampanjac, te kupanje u jacuzziju. A ovaj već zanimljiv program, upotpunit će i ples na svili koji svakoga ostavi bez daha. Fire i laser show, te mnoga druga iznenađenja su dio bogatog cjelovečernjeg programa u kojemu podjednako uživaju i dečki i cure. Cijena ulaznice je 69kn. VIP 120kn. Rezervacije i informacije: +385 20 436 010 +385 98 533 531
+                                                        </p>
+                                                    </div>
+                                                    <div>
+                                                        <div>
+                                                            <p>57<span>%</span></p>
+                                                            <p>Male</p>
+                                                        </div>
+                                                        <div>
+                                                            <p>43<span>%</span></p>
+                                                            <p>Female</p>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                            <div class="col-12 col-md-12 col-lg-12 d-flex justify-content-center">
+                                                <a href="#">Load More</a>
+                                            </div>
+                    </div>
+            </div>
+        </div>
+        <footer class="container-fluid bottom">
+            <div class="container">
+                <div class="row no-gutters justify-content-center">
+                    <div class="col-12 col-md-12 col-lg-12">
+                        <a class="button_nav rounded"></a>
+                        <ul class="d-flex p-0 m-0 justify-content-center">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#">About eco</a></li>
+                            <li><a href="#">How it works</a></li>
+                            <li><a href="#">Industries</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Faq's</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Terms of service</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row no-gutters justify-content-between">
+                    <div class="order-1 col-12 col-md-6 col-lg-4">
+                        <p>© 2013 <span>steam.</span> All Rights Reserved. Design by <span>woof.</span></p>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-2 order-md-1 order-lg-1">
+                        <ul class="d-flex p-0 m-0 justify-content-between">
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script>
+                function initMap() {
+                    var element = document.getElementById('map');
+                    var options = {
+                        zoom: 13,
+                        center: {lat: 28.612493, lng: 77.271110},
+                        styles: [
+                                    {
+                                        "featureType": "water",
+                                        "elementType": "geometry",
+                                        "stylers": [
+                                            {
+                                                "color": "#e9e9e9"
+                                            },
+                                            {
+                                                "lightness": 17
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "featureType": "landscape",
+                                        "elementType": "geometry",
+                                        "stylers": [
+                                            {
+                                                "color": "#f5f5f5"
+                                            },
+                                            {
+                                                "lightness": 20
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "featureType": "road.highway",
+                                        "elementType": "geometry.fill",
+                                        "stylers": [
+                                            {
+                                                "color": "#ffffff"
+                                            },
+                                            {
+                                                "lightness": 17
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "featureType": "road.highway",
+                                        "elementType": "geometry.stroke",
+                                        "stylers": [
+                                            {
+                                                "color": "#ffffff"
+                                            },
+                                            {
+                                                "lightness": 29
+                                            },
+                                            {
+                                                "weight": 0.2
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "featureType": "road.arterial",
+                                        "elementType": "geometry",
+                                        "stylers": [
+                                            {
+                                                "color": "#ffffff"
+                                            },
+                                            {
+                                                "lightness": 18
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "featureType": "road.local",
+                                        "elementType": "geometry",
+                                        "stylers": [
+                                            {
+                                                "color": "#ffffff"
+                                            },
+                                            {
+                                                "lightness": 16
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "featureType": "poi",
+                                        "elementType": "geometry",
+                                        "stylers": [
+                                            {
+                                                "color": "#f5f5f5"
+                                            },
+                                            {
+                                                "lightness": 21
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "featureType": "poi.park",
+                                        "elementType": "geometry",
+                                        "stylers": [
+                                            {
+                                                "color": "#dedede"
+                                            },
+                                            {
+                                                "lightness": 21
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "elementType": "labels.text.stroke",
+                                        "stylers": [
+                                            {
+                                                "visibility": "on"
+                                            },
+                                            {
+                                                "color": "#ffffff"
+                                            },
+                                            {
+                                                "lightness": 16
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "elementType": "labels.text.fill",
+                                        "stylers": [
+                                            {
+                                                "saturation": 36
+                                            },
+                                            {
+                                                "color": "#333333"
+                                            },
+                                            {
+                                                "lightness": 40
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "elementType": "labels.icon",
+                                        "stylers": [
+                                            {
+                                                "visibility": "off"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "featureType": "transit",
+                                        "elementType": "geometry",
+                                        "stylers": [
+                                            {
+                                                "color": "#f2f2f2"
+                                            },
+                                            {
+                                                "lightness": 19
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "featureType": "administrative",
+                                        "elementType": "geometry.fill",
+                                        "stylers": [
+                                            {
+                                                "color": "#fefefe"
+                                            },
+                                            {
+                                                "lightness": 20
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "featureType": "administrative",
+                                        "elementType": "geometry.stroke",
+                                        "stylers": [
+                                            {
+                                                "color": "#fefefe"
+                                            },
+                                            {
+                                                "lightness": 17
+                                            },
+                                            {
+                                                "weight": 1.2
+                                            }
+                                        ]
+                                    }
+                                ]
+                    };
+            
+                    var myMap = new google.maps.Map(element, options);
+            
+                    var markers = [
+                        {
+                            coordinates: {lat: 28.627531, lng: 77.263362},
+                            info: ''
+                        },
+                        {
+                            coordinates: {lat: 28.611977, lng: 77.243667},
+                            info: ''
+                        },
+                        {
+                            coordinates: {lat: 28.598527, lng: 77.256723},
+                            info: ''
+                        },
+                        {
+                            coordinates: {lat: 28.601174, lng: 77.267119},
+                            info: ''
+                        },
+                        {
+                            coordinates: {lat: 28.587033, lng: 77.257571},
+                            info: '<div class="popup"><img src="images/img_onmap.png"><h2>Act Big! Ultimate Music Festival</h2><p>Pattichion Municipal Amphitheater</p><adress>Nikolaou G. Dimitriou Street , Larnaca, 6031, Cyprus</adress></div>'
+                        },
+                        {
+                            coordinates: {lat: 28.584543, lng: 77.261516},
+                            info: ''
+                        },
+                        {
+                            coordinates: {lat: 28.591181, lng: 77.276659},
+                            info: ''
+                        },
+                        {
+                            coordinates: {lat: 28.589708, lng: 77.278626},
+                            info: ''
+                        },
+                        {
+                            coordinates: {lat: 28.605576, lng: 77.287942},
+                            info: ''
+                        },
+                        {
+                            coordinates: {lat: 28.606214, lng: 77.299615},
+                            info: ''
+                        },
+                        {
+                            coordinates: {lat: 28.616739, lng: 77.286480},
+                            info: ''
+                        },
+                        {
+                            coordinates: {lat: 28.620709, lng: 77.282782},
+                            info: ''
+                        }
+                    ];
+
+            
+                    for(var i = 0; i < markers.length; i++) {
+                        addMarker(markers[i]);
+                    }
+            
+                    function addMarker(properties) {
+                        var marker = new google.maps.Marker({
+                            position: properties.coordinates,
+                            map: myMap
+                        });
+            
+                        if(properties.image) {
+                            marker.setIcon(properties.image);
+                        }
+            
+                        if(properties.info) {
+                            var InfoWindow = new google.maps.InfoWindow({
+                                content: properties.info
+                            });
+            
+                            marker.addListener('click', function(){
+                                InfoWindow.open(myMap, marker);
+                            });
+                        }
+                    }
+                }
+
+                
+            </script>
+            
+            <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-WeBVoR-kToNy_F6qw4pzLxvaqhEg4v0&callback=initMap">
+            </script>
+
+<script>
+
+    $('.events ul>li+li>.trending').click(function(){
+        $('.events ul>li+li>.trending').addClass('active');
+        $('.events ul>li+li>.trending').removeClass('not_active');
+    });
+
+    $('.events ul>li+li>.trending').click(function(){
+        $('.events ul>li>.hot').addClass('not_active');
+        $('.events ul>li>.hot').removeClass('active');
+    });
+
+    $('.events ul>li>.hot').click(function(){
+        $('.events ul>li>.hot').addClass('active');
+        $('.events ul>li>.hot').removeClass('not_active');
+    });
+
+    $('.events ul>li>.hot').click(function(){
+        $('.events ul>li+li>.trending').addClass('not_active');
+        $('.events ul>li+li>.trending').removeClass('active');
+    });
+
+    $('.events ul>li+li>.trending').click(function(){
+        $('.articles>div>div>div').addClass('order-3');
+        $('.articles>div>div>div:last-child').addClass('order-4');
+        $('.articles>div>div>div:nth-child(3)').removeClass('order-3 justify-content-end');
+        $('.articles>div>div>div:nth-child(3)').addClass('order-1 third_art');
+        $('.articles>div>div>div:nth-child(1)').addClass('justify-content-center d-flex first_art');
+        $('.articles>div>div>div:nth-child(2)').removeClass('justify-content-center');
+        $('.articles>div>div>div:nth-child(2)').addClass('justify-content-end second_art');
+    });
+
+    $('.events ul>li>.hot').click(function(){
+        if( $('.articles>div>div>div:nth-child(3)').hasClass('order-1') ) { $('.articles>div>div>div:nth-child(3)') .addClass('order-3 justify-content-end')};
+        $('.articles>div>div>div:nth-child(3)').removeClass('order-1 third_art');
+        $('.articles>div>div>div:nth-child(1)').removeClass('justify-content-center d-flex first_art');
+        $('.articles>div>div>div:nth-child(2)').addClass('justify-content-center');
+        $('.articles>div>div>div:nth-child(2)').removeClass('justify-content-end second_art');
+    });
+
+
+    $('.top .button_nav').click(function(){
+        $('.top .button_nav+.nav').toggleClass('move');
+    });
+
+   
+   
+
+
+
+
+</script>
+
+
+    </body>
+    </body>
+</html>
